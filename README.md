@@ -46,9 +46,10 @@ You can skip the pre-preprocessing phase if you don't use the `import` macro for
 2. `main`: Simplify the main function declaration.
 
     ```c
-    main() {
+    main()
+    begin
         return 0;
-    }
+    end
     ```
 
 3. `make`: A macro for dynamic memory allocation using `malloc`. Inspired from Golang's `make`.
