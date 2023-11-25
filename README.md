@@ -63,7 +63,9 @@ You can skip the pre-preprocessing phase if you don't use the `import` macro for
     ```c
     repeat(n, 10)
     begin
-        echo("[%d] Hello!\r\n", n);
+        echo("[");
+        echo(n);
+        echo("] Hello!\r\n");
     end
     ```
 
