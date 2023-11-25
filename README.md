@@ -126,6 +126,17 @@ You can skip the pre-preprocessing phase if you don't use the `import` macro for
 
 10. Integer Types: Macros for defining integer types with different sizes. There integer types are mostly inspired from Rust's primitive data types. This integer types includes: `i8`, `i16`, `i32`, `i64`, `u8`, `u16`, `u32`, `u64`, `rune`, `string`, and `usize`.
 
+11. `unless`: Counter-part for `if` statement that only executes its body if the condition is false.
+
+    ```c
+    unless(false)
+    begin
+        echo("Hi, `unless` statement was executed.")
+    end
+    ```
+
+
+
 ## Contribution Guidelines (Expanded)
 
 Contributions to "wtfC!?" are welcome! If you have an idea for a new macro or want to improve existing ones, please follow these guidelines:

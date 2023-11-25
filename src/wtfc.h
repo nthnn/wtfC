@@ -27,17 +27,21 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define import              # include
-#define main                int main
+#define import                  # include
+#define main                    int main
 
+#define true                    1
+#define false                   0
 
-#define ever                (;;)
-#define elif                else if
-#define nothing             ^void() {}
-#define random              if(rand() % 2)
-#define make(type, size)    (type*)malloc(sizeof(type) * size)
-#define repeat(x, count)    for(int x = 0; x < count ; x ++) 
-#define using(var, body)    { var; body; }
+#define etc                     ...
+#define ever                    (;;)
+#define elif                    else if
+#define nothing                 ^void() {}
+#define random                  if(rand() % 2)
+#define unless(condition)       if(!(condition))
+#define make(type, size)        (type*)malloc(sizeof(type) * size)
+#define repeat(x, count)        for(int x = 0; x < count ; x ++) 
+#define sub(name, type, ...)    type name(__VA_ARGS__)
 
 #define echo(value) _Generic((value),       \
             int: printf("%d", value),	    \
