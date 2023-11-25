@@ -110,11 +110,18 @@ You can skip the pre-preprocessing phase if you don't use the `import` macro for
 
 9. `begin` and `end`: Replace `{` and `}` for defining code blocks.
 
-    ```
+    ```c
     // Basic block using the begin and end keyword.
     begin
     ...
     end
+    ```
+
+11. `random`: Randomly executed a statement based on the random seed.
+
+    ```c
+    random echo("Randomly executed!");
+    else echo("Random wasn't executed.")
     ```
 
 10. Integer Types: Macros for defining integer types with different sizes. There integer types are mostly inspired from Rust's primitive data types. This integer types includes: `i8`, `i16`, `i32`, `i64`, `u8`, `u16`, `u32`, `u64`, `rune`, `string`, and `usize`.

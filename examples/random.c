@@ -21,12 +21,11 @@
  * THE SOFTWARE.
  */
 
-main()
-begin
-    repeat(n, 10)
-    begin
-        echo("[");
-        echo(n);
-        echo("] Hello!\r\n");
-    end
+main() begin
+    // Do not forget to seed the random number generator.
+    srand((unsigned) time(0));
+
+    random echo("Randomly executed.\r\n");
+    else echo ("Random wasn't executed.\r\n");
+    // The `else` statement is optional.
 end

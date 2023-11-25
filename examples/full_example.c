@@ -21,8 +21,6 @@
  * THE SOFTWARE.
  */
 
-import <stdio.h>
-
 main(i32 argc, string argv[])
 begin
 	nothing;
