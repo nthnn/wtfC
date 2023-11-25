@@ -5,6 +5,35 @@
 > [!WARNING]
 > wtfC!? was made for fun, thus, do not use it for professional use.
 
+## Usage
+
+```c
+import <stdio.h>
+
+main(i32 argc, string argv[])
+begin
+	nothing;
+
+	i32* test = make(i32, 10);
+	test[9] = 100;
+
+	echo(test[9]);
+	echo("\nHello, damn world!\r\n");
+
+	for ever;
+end
+```
+
+If you are using the macro `import`, you should preprocess your source file first before compiling. For example:
+
+```bash
+gcc -E -include src/wtfc.h -o full_example_prep.c examples/full_example.c
+gcc -w -o full_example full_example_prep.c && rm full_example_prep.c
+./full_example
+```
+
+You can skip the pre-preprocessing phase if you don't use the `import` macro for file inclusion.
+
 ## Macro Definitions
 
 1. `import`: Replace `#include` with a more unconventional syntax.
@@ -68,10 +97,12 @@
     nothing;
     ```
 
-8. `echo`: A versatile macro for printing values with type awareness.
+8. `echo`: A versatile macro for printing values with type awareness. This will cause a lot of warnings, you can use the `-w` parameter on `gcc`.
 
     ```c
     echo("Hello, world!");
+    echo('\n');
+    echo(3.14f);
     ```
 
 9. `begin` and `end`: Replace `{` and `}` for defining code blocks.
@@ -83,7 +114,7 @@
     end
     ```
 
-10. Integer Types: Macros for defining integer types with different sizes. There integer types are mostly inspired from Rust's primitive data types. This integer types includes: `i8`, `i16`, `i32`, `i64`, `u8`, `u16`, `u32`, `u64`, `rune`, and `usize`.
+10. Integer Types: Macros for defining integer types with different sizes. There integer types are mostly inspired from Rust's primitive data types. This integer types includes: `i8`, `i16`, `i32`, `i64`, `u8`, `u16`, `u32`, `u64`, `rune`, `string`, and `usize`.
 
 ## Contribution Guidelines (Expanded)
 
