@@ -1,6 +1,6 @@
 import <stdio.h>
 
-main(i32 argc, rune* argv[])
+main(i32 argc, string argv[])
 begin
 	nothing;
 

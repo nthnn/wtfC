@@ -47,6 +47,7 @@
 #define end     }
 
 #define rune    char
+#define string  char*
 #define i8      signed char
 #define i16     signed short int
 #define i32     signed int
