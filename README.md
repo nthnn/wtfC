@@ -14,15 +14,15 @@ import <stdio.h>
 
 main(i32 argc, string argv[])
 begin
-	nothing;
+  nothing;
 
-	i32* test = make(i32, 10);
-	test[9] = 100;
+  i32* test = make(i32, 10);
+  test[9] = 100;
 
-	echo(test[9]);
-	echo("\nHello, damn world!\r\n");
+  echo(test[9]);
+  echo("\nHello, damn world!\r\n");
 
-	for ever;
+  for ever;
 end
 ```
 
