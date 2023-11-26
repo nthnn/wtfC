@@ -1,9 +1,3 @@
-<style>
-    @media only screen and (max-width: 600px) {
-        br {display: none}
-    }
-</style>
-
 # wtfC!?: C/C++ Macro-abusive Extension
 
 <img src="assets/wtfc-poster.png" width="60%" align="right" />
@@ -13,7 +7,19 @@
 > [!WARNING]
 > wtfC!? was made for fun, thus, do not use it for professional use.
 
-<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<span style="display: none;">&nbsp;</span>
+<span style="display: none;">&nbsp;</span>
+<span style="display: none;">&nbsp;</span>
+<span style="display: none;">&nbsp;</span>
+<span style="display: none;">&nbsp;</span>
+<span style="display: none;">&nbsp;</span>
+<span style="display: none;">&nbsp;</span>
+<span style="display: none;">&nbsp;</span>
+<span style="display: none;">&nbsp;</span>
+<span style="display: none;">&nbsp;</span>
+<span style="display: none;">&nbsp;</span>
+<span style="display: none;">&nbsp;</span>
+<span style="display: none;">&nbsp;</span>
 
 ## Usage
 
