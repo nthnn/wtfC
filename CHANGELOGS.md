@@ -5,6 +5,7 @@ v1.0.1
 - Added `etc` macro
 - Added `sub` macro
 - Added `true` and `false`
+- wtfC!? illustration by Lady Selene
 
 v1.0.0
 ----------------
