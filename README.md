@@ -1,9 +1,3 @@
-<style>
-    @media only screen and (max-width: 600px) {
-        br {display: none}
-    }
-</style>
-
 # wtfC!?: C/C++ Macro-abusive Extension
 
 <img src="assets/wtfc-poster.png" width="60%" align="right" />
@@ -12,8 +6,6 @@
 
 > [!WARNING]
 > wtfC!? was made for fun, thus, do not use it for professional use.
-
-<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
 ## Usage
 
@@ -194,6 +186,11 @@ Contributions to "wtfC!?" are welcome! If you have an idea for a new macro or wa
     - Collaborate with the community to refine and improve your contribution.
 
 Please note that all contributions are subject to review, and maintaining a positive and collaborative atmosphere is crucial.
+
+## Contributors
+
+- [Nathanne Isip](https://github.com/nthnn) - Author
+- [Lady Selene](https://instagram.com/lady.selenee) - Illustrator
 
 ## License
 
