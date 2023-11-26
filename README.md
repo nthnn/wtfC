@@ -1,9 +1,13 @@
 # wtfC!?: C/C++ Macro-abusive Extension
 
+<img src="assets/wtfc-poster.png" width="60%" align="right" />
+
 "wtfC!?" is a playful language extension for C and C++ that introduces unconventional and humorous macros to replace common programming constructs. This project aims to add a touch of creativity and humor to C/C++ programming, offering an alternative way to write code that might appeal to developers looking for a unique coding experience.
 
 > [!WARNING]
 > wtfC!? was made for fun, thus, do not use it for professional use.
+
+<br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
 ## Usage
 
