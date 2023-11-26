@@ -5,7 +5,7 @@
 "wtfC!?" is a playful language extension for C and C++ that introduces unconventional and humorous macros to replace common programming constructs. This project aims to add a touch of creativity and humor to C/C++ programming, offering an alternative way to write code that might appeal to developers looking for a unique coding experience.
 
 > [!WARNING]
-> wtfC!? was made for fun, thus, do not use it for professional use.
+> wtfC!? was made for fun, thus, do not use it for professional use. But yeah, you have to be insane enough to use this on serious projects.
 
 ## Usage
 
@@ -29,7 +29,7 @@ end
 If you are using the macro `import`, you should preprocess your source file first before compiling. For example:
 
 ```bash
-gcc -E -include src/wtfc.h -o full_example_prep.c examples/full_example.c
+gcc -x c -E -include src/wtfc.wtfh -o full_example_prep.c examples/full_example.wtfc
 gcc -w -o full_example full_example_prep.c && rm full_example_prep.c
 ./full_example
 ```

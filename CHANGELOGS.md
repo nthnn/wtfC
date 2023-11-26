@@ -1,3 +1,7 @@
+v1.0.2
+----------------
+- Changed `.c` source file to `.wtfc` and `.h` to `.wtfh`.
+
 v1.0.1
 ----------------
 - Added `random` macro
