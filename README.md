@@ -1,4 +1,4 @@
-# wtfC!?: C/C++ Macro-abusive Extension
+# wtfC!?: C/C++ Unconventional Macro Extensions
 
 <img src="assets/wtfc-poster.png" width="60%" align="right" />
 
