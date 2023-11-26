@@ -135,7 +135,18 @@ You can skip the pre-preprocessing phase if you don't use the `import` macro for
     end
     ```
 
+12. `true` and `false`: Self explanatory boolean values.
 
+13. `proc`: Macro for creating a procedure or subroutine.
+
+    ```c
+    // Declares a function named `say`
+    // that takes a string parameter
+    sub(say, void, string message)
+    begin
+        echo(message);
+    end
+    ```
 
 ## Contribution Guidelines (Expanded)
 
