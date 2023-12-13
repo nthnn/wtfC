@@ -42,29 +42,41 @@
 #define make(type, size)        (type*)malloc(sizeof(type) * size)
 #define repeat(x, count)        for(int x = 0; x < count ; x ++) 
 #define sub(name, type, ...)    type name(__VA_ARGS__)
-
-#define echo(value) _Generic((value),       \
-            int: printf("%d", value),	    \
-            float: printf("%f", value),	    \
-            double: printf("%lf", value),   \
-            char: printf("%c", value),      \
-            char*: printf("%s", value),     \
-            default: printf("")             \
-)
+#define echo                    printf
 
 #define begin   {
 #define end     }
 
-#define rune    char
-#define string  char*
-#define i8      signed char
-#define i16     signed short int
-#define i32     signed int
-#define i64     signed long int
-#define u8      unsigned char
-#define u16     unsigned short int
-#define u32     unsigned int
-#define u64     unsigned long int
-#define usize   size_t
+#define rune        char
+#define string      char*
+#define i8          signed char
+#define i16         signed short int
+#define i32         signed int
+#define i64         signed long int
+#define u8          unsigned char
+#define u16         unsigned short int
+#define u32         unsigned int
+#define u64         unsigned long int
+#define usize       size_t
+
+#define and         &&
+#define or          ||
+
+#define not         !
+#define is          ==
+#define less        <
+#define lesseq      <=
+#define greater     >
+#define greatereq   >=
+
+#define as          =
+#define address     *
+#define addressof   &
+
+#define plus        +
+#define minus       -
+#define divide      /
+#define times       *
+#define mod         %
 
 #endif
