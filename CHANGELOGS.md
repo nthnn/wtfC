@@ -1,3 +1,11 @@
+v1.0.3
+----------------
+- Added comparison operators: `not`, `is`, `less`, `lesseq`, `greater`, and `greatereq`
+- Added macros for logical expressions: `and` and `or`
+- Added the following mathematical macros: `plus`, `minus`, `divide`, `times`, and `mod`
+- More operators including `as`, `address`, `addressof`
+- Modified example source files.
+
 v1.0.2
 ----------------
 - Changed `.c` source file to `.wtfc` and `.h` to `.wtfh`.
