@@ -25,11 +25,17 @@ main(i32 argc, string argv[])
 begin
 	nothing;
 
-	i32* test as make(i32, 10);
-	test[9] as 100;
+	i32 sum             as 5 plus 5,
+        diff            as 5 minus 5,
+        quotient        as 10 divide 5,
+        factor          as 5 times 5,
+        less_than       as 5 less 3,
+        lesseq_than     as 5 lesseq 5,
+        greater_than    as 5 greater 8;
 
-	echo("%d", test[9]);
-	echo("\nHello, damn world!\r\n");
+    echo("5 + 5 = %d\r\n", sum);
+    echo("5 - 5 = %d\r\n", diff);
+    echo("10 / 5 = %d\r\n", quotient);
+    echo("5 * 5 = %d\r\n", factor);
 
-	for ever;
 end
