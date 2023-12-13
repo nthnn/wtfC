@@ -29,7 +29,7 @@ end
 If you are using the macro `import`, you should preprocess your source file first before compiling. For example:
 
 ```bash
-gcc -x c -E -include src/wtfc.wtfh -o full_example_prep.c examples/full_example.wtfc
+gcc -x c -E -include src/wtfc.wtfch -o full_example_prep.c examples/full_example.wtfc
 gcc -w -o full_example full_example_prep.c && rm full_example_prep.c
 ./full_example
 ```
@@ -139,7 +139,7 @@ You can skip the pre-preprocessing phase if you don't use the `import` macro for
 
 12. `true` and `false`: Self explanatory boolean values.
 
-13. `proc`: Macro for creating a procedure or subroutine.
+13. `sub`: Macro for creating a procedure or subroutine.
 
     ```c
     // Declares a function named `say`
@@ -149,6 +149,10 @@ You can skip the pre-preprocessing phase if you don't use the `import` macro for
         echo(message);
     end
     ```
+
+14. Operators: `add`, `minus`, `divide`, `times`, `not`, `is`, `less`, `lesseq`, `greater`, `greatereq`, `and`, `or`, and `as`.
+
+15. Pointer and Address operators: `address` and `addressof`.
 
 ## Contribution Guidelines (Expanded)
 
