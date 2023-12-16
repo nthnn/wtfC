@@ -27,3 +27,27 @@ jobs:
           clang -x c -E -include src/wtfc.wtfch -o full_example_prep.c examples/full_example.wtfc
           clang -w -o full_example full_example_prep.c
           rm full_example_prep.c
+
+      - name: Example 3 Build
+        run: |
+          clang -x c -E -include src/wtfc.wtfch -o random_prep.c examples/random.wtfc
+          clang -w -o random random_prep.c
+          rm random_prep.c
+
+      - name: Example 4 Build
+        run: |
+          clang -x c -E -include src/wtfc.wtfch -o repeat_prep.c examples/repeat.wtfc
+          clang -w -o repeat repeat_prep.c
+          rm repeat_prep.c
+
+      - name: Example 5 Build
+        run: |
+          clang -x c -E -include src/wtfc.wtfch -o sub_prep.c examples/sub.wtfc
+          clang -w -o sub sub_prep.c
+          rm sub_prep.c
+
+      - name: Example 6 Build
+        run: |
+          clang -x c -E -include src/wtfc.wtfch -o unless_prep.c examples/unless.wtfc
+          clang -w -o unless unless_prep.c
+          rm unless_prep.c
