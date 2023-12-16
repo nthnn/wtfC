@@ -1,4 +1,4 @@
-name: GCC CI
+name: Clang Build CI
 
 on:
   push:
@@ -13,8 +13,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: GCC installation
-        run: sudo apt update && sudo apt install gcc
+      - name: Clang compiler installation
+        run: sudo apt update && sudo apt install clang
 
       - name: Example 1 Build
         run: gcc -x c -E -include src/wtfc.wtfch -o expressions_prep.c examples/expressions.wtfc && gcc -w -o expressions expressions_prep.c && rm expressions_prep.c
