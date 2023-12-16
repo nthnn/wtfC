@@ -24,7 +24,7 @@ jobs:
 
       - name: Example 1 Build
         run: |
-          clang -x c -E -include src/wtfc.wtfch -o expressions_prep.c examples/expressions.wtfc
+          clang -x c -E -fblocks -include src/wtfc.wtfch -o expressions_prep.c examples/expressions.wtfc
           clang -w -o expressions expressions_prep.c
           rm expressions_prep.c
 
