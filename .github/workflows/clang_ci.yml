@@ -7,20 +7,14 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
 
       - name: Clang compiler installation
-        run: |
-          sudo add-apt-repository ppa:ubuntu-toolchain-r/test
-          sudo apt update
-          sudo apt upgrade
-          wget https://apt.llvm.org/llvm.sh
-          sudo chmod +x llvm.sh
-          sudo ./llvm.sh 14
+        run: brew install llvm
 
       - name: Example 1 Build
         run: |
