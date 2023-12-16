@@ -5,6 +5,7 @@ v1.0.3
 - Added the following mathematical macros: `plus`, `minus`, `divide`, `times`, and `mod`
 - More operators including `as`, `address`, `addressof`
 - Modified example source files.
+- GitHub CI workflow pipeline for autmation builds.
 
 v1.0.2
 ----------------
