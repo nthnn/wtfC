@@ -1,0 +1,24 @@
+name: GCC CI
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+
+      - name: GCC installation
+        uses: sudo apt update && sudo apt install gcc
+
+      - name: Example 1 Build
+        uses: gcc -x c -E -include src/wtfc.wtfch -o expressions_prep.c examples/expressions.wtfc && gcc -w -o expressions expressions_prep.c && rm expressions_prep.c
+
+      - name: Example 2 Build
+        uses: gcc -x c -E -include src/wtfc.wtfch -o full_example_prep.c examples/full_example.wtfc && gcc -w -o full_example full_example_prep.c && rm full_example_prep.c
